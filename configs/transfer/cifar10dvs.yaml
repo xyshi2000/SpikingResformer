@@ -1,0 +1,24 @@
+seed: 12450
+epochs: 100
+batch_size: 48
+T: 10
+model: spikingresformer_s
+dataset: CIFAR10DVS
+augment: augment
+mixup: True
+cutout: False
+label_smoothing: 0.1
+workers: 16
+lr: 4e-5
+optimizer: adamw
+weight_decay: 0.01
+input_size: [3, 128, 128]
+
+TET: False
+TET_phi: 1.0
+TET_lambda: 0.0
+
+save_latest: False
+test_only: False
+amp: True
+sync_bn: False

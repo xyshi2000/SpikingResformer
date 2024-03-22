@@ -1,0 +1,24 @@
+seed: 12450
+epochs: 320
+batch_size: 16
+T: 4
+model: spikingresformer_l
+dataset: ImageNet
+augment: rand-m9-n3-mstd0.5-inc1
+mixup: True
+cutout: False
+label_smoothing: 0.1
+workers: 16
+lr: 0.0005
+optimizer: adamw
+weight_decay: 0.01
+input_size: [3, 224, 224]
+
+TET: False
+TET_phi: 1.0
+TET_lambda: 0.0
+
+save_latest: False
+test_only: False
+amp: True
+sync_bn: True
