@@ -33,7 +33,7 @@ torchrun \
     --nnodes=1 \
     --nproc-per-node=8 \
 main.py \
-    -c configs/main/spikingresformer_S.yaml \
+    -c configs/main/spikingresformer_s.yaml \
     --data-path /path/to/your/dataset \
     --output-dir /path/to/your/output \
     ;

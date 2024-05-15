@@ -55,7 +55,7 @@ def parse_args():
     parser.add_argument('--epochs', default=320, type=int)
     parser.add_argument('--batch-size', default=32, type=int)
     parser.add_argument('--T', default=4, type=int, help='simulation steps')
-    parser.add_argument('--model', default='spikingtransformer_ti', help='model type')
+    parser.add_argument('--model', default='spikingresformer_ti', help='model type')
     parser.add_argument('--dataset', default='ImageNet', help='dataset type')
     parser.add_argument('--augment', type=str, help='data augmentation')
     parser.add_argument('--mixup', type=bool, default=False, help='Mixup')
