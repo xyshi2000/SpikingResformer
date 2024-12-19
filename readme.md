@@ -41,6 +41,19 @@ main.py \
 
 Experimental setups of SpikingResformer-Ti, M, L can be found in `configs/main`.
 
+Pretrained checkpoints: [here](https://drive.google.com/drive/folders/1sAFHKF9QZC2P0aSoC9bdLqgW8TfLjFSC?usp=sharing)
+
+Run the following command to evaluate the pretrained checkpoints
+
+```bash
+python main.py \
+    --model spikingresformer_s \
+    --data-path /path/to/your/dataset \
+    --resume /path/to/your/checkpoint \
+    --test-only \
+    ;
+```
+
 ### Transfer Learning
 
 Run the following command to transfer the pretrained SpikingResformer-S to CIFAR10
